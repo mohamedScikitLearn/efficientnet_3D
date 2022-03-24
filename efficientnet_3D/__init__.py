@@ -68,7 +68,7 @@ def init_keras_custom_objects():
         'FixedDropout': inject_keras_modules(model.get_dropout)()
     }
 
-    keras.utils.get_custom_objects().update(custom_objects)
+    tfkeras.utils.get_custom_objects().update(custom_objects)
 
 
 def init_tfkeras_custom_objects():
